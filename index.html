@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Feliz San Valentín</title>
+</head>
+
+<body>
+
+
+  <audio id="background-music" loop>
+    <source src="/music.mp3" type="audio/mpeg">
+    Tu navegador no soporta la reproducción de audio.
+  </audio>
+  
+  <button id="play-music" style=" margin: 0px 0 10px 15px; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; background-color: #ff4081; color: white; cursor: pointer; width: 50%;">
+    🎵 Activar Música
+  </button>
+  
+  
+
+  <!-- corazónes -->
+  <div class="falling-items">
+    <div class="cora"></div>
+    <div class="cora"></div>
+    <div class="cora"></div>
+    <div class="cora"></div>
+    <div class="cora"></div>
+    <div class="cora"></div>
+    <div class="cora"></div>
+    <div class="cora"></div>
+    <div class="cora"></div>
+    <div class="cora"></div>
+  </div>
+  
+
+  <div class="flipbook">
+    <!-- Hoja de la portada -->
+    <div class="hard">
+      <div class="rose">
+        <div class="petal petal1"></div>
+        <div class="petal petal2"></div>
+        <div class="petal petal3"></div>
+        <div class="petal petal4"></div>
+        <div class="center"></div>
+      </div>
+      <small> Para Mi Amor</small>
+      <small>"Te Amo demasido Bebe" ❤️</small>
+    </div>
+    <div class="hard"></div>
+
+    <!-- Segunda Hoja -->
+    <div>
+      <div class="love"></div>
+      <small>En este día especial, quiero recordarte lo mucho que te amo.</small>
+      <small>Eres la razón por la que mi corazón late con fuerza.</small>
+    </div>
+
+    <!-- Tercera Hoja -->
+    <div>
+      <img src="images/img1.jpeg" alt="" class="heart-image" />
+      <small> "Tu amor es como el fuego que nunca se apaga." </small>
+    </div>
+
+    <!-- Cuarta Hoja -->
+    <div>
+      <img src="images/img2.jpeg" alt="" class="heart-image" />
+      <small> "Cada momento a tu lado es un tesoro para mí." </small>
+    </div>
+
+    <!-- Quinta Hoja -->
+    <div>
+      <img src="images/img3.jpeg" alt="" class="heart-image" />
+      <small> "Eres mi luz en los días oscuros." </small>
+    </div>
+
+    <!-- Sexta Hoja -->
+    <div>
+      <img src="images/img4.jpeg" alt="" class="heart-image" />
+      <small> "Contigo, cada instante es mágico." </small>
+    </div>
+
+    <!-- Setima Hoja -->
+    <div>
+      <img src="images/img5.jpeg" alt="" class="heart-image" />
+      <small> "Eres mi sueño hecho realidad." </small>
+    </div>
+
+    <!-- Octava Hoja -->
+    <div>
+      <img src="images/img6.jpeg" alt="" class="heart-image" />
+      <small> "Contigo, cada instante es mágico." </small>
+    </div>
+
+    <!-- Novena Hoja -->
+    <div>
+      <div class="card">
+        <h1 class="title">¿Te gustaria ser mi San Valentin?</h1>
+        <div class="animation">
+            <img src="images/cat-01.gif" alt="San Valentin" class="cat img-fluid">
+        </div>
+        <div class="text"></div>
+        <button class="button">Si</button>
+        <button class="button button__negative">No</button>
+        <button class="button button__error">A no tiene que decir que SI jaja</button>
+    </div>
+      <small> "Te quiero demasiado." </small>
+    </div>
+
+    <!-- Decima Hoja -->
+    <div class="hard"></div>
+    <div class="hard">Gracias por Existir <small>"Eres lo mejor que me a pasado" ❤️</small></div>
+  </div>
+
+
+  <footer>
+    <small style="opacity: 0.1; color: white; display: flex; justify-content:flex-end; margin: 20px 10px 0 0;">@DevWes</small>
+  </footer>
+
+  <script src="jquery.js"></script>
+  <script src="turn.js"></script>
+  <script src="script.js"></script>
+  <script>
+    $(".flipbook").turn();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.1/dist/confetti.browser.min.js"></script>
+
+  <script>
+    setInterval(() => {
+      confetti({
+        particleCount: 40,
+        spread: 120,
+        origin: { x: 0.5, y: 0.1 }
+      });
+    }, 2000); 
+  </script>
+
+<script>
+  const music = document.getElementById('background-music');
+  const button = document.getElementById('play-music');
+
+  button.addEventListener('click', () => {
+    music.currentTime = 21; 
+    music.play();
+    button.style.display = 'none';
+  });
+</script>
+
+</body>
+
+</html>
