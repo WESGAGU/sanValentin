@@ -202,8 +202,8 @@ small {
 
 @media (max-width: 768px) {
     .flipbook {
-        width: 100vw;
-        height: 60vh;
+        width: 110vw;
+        height: 50vh;
         margin: 0 10px 0 10px;
     }
 
