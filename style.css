@@ -202,9 +202,9 @@ small {
 
 @media (max-width: 768px) {
     .flipbook {
-        width: 110vw;
-        height: 50vh;
-        margin: 0 10px 0 10px;
+        width: 100vw;
+        height: 40vh;
+        margin: 0 15px 0 15px;
     }
 
     .page img {
