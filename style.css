@@ -207,6 +207,13 @@ small {
         margin: 0 15px 0 15px;
     }
 
+    .font-mobile{
+      font-size: 2em;
+    }
+    .font-mobile-description{
+      font-size: 1.5em;
+    }
+
     .page img {
         width: 80%;
     }
